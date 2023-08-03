@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 
 
-/***   Generales   ***/
+/***   Generales   ***/ /*---------------------------------------------------------------------------------*/
 html {
     scroll-behavior: smooth;
     height: 100%;
@@ -15,6 +15,16 @@ body {
     background: linear-gradient(to right, #155799, #159957);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Montserrat', sans-serif;
+}
+
+.overflowH {
+    overflow: hidden;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .margin30 {
@@ -53,15 +63,46 @@ a {
 }
 
 
-/***   Fin Generales   ***/
+/***   Fin Generales   ***/ /*---------------------------------------------------------------------------------*/
 
-/***---   Botones   ---***/
+/***   Liston Azul   ***/ /*---------------------------------------------------------------------------------*/
+.listonAzul {
+    background-color: #00358e;
+    max-height: 70px;
+}
+
+.aliIzq {
+    text-align: left;
+}
+
+.aliDer {
+    text-align: right;
+}
+
+.logoArgProg {
+    margin: 10px;
+    max-height: 50px;
+}
+
+.redesListon {
+    max-height: 35px;
+    margin-top: 17px;
+    margin-right: 20px;
+}
+
+/***   Fin Liston Azul   ***/ /*---------------------------------------------------------------------------------*/
+
+/***---   Botones   ---***/ /*---------------------------------------------------------------------------------*/
+
+.max20px {
+    max-height: 20px;
+}
+
 nav li {
     list-style: none;
 }
 
 nav a {
-    /*margin: 10px 1px 1px 10px;*/
     padding: 10px 40px 5px 40px;
     text-decoration: none;
     cursor: pointer;
@@ -75,11 +116,15 @@ nav a:hover {
     color: #696969;
     background: rgba(255, 255, 255, 0.5);
     border-style: none none solid none;
-    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, 0.5);*/
 }
 
 nav a:visited {
     text-decoration: none;
+}
+
+.fontButtons {
+    font-family: 'Russo One', sans-serif;
+    color: white;
 }
 
 .iMenu {
@@ -90,35 +135,45 @@ nav a:visited {
 
 .pc {
     display: block;
-    visibility: visible;
-    position: static;
 }
 
 .cel {
     display: none;
-    visibility: hidden;
-    position: fixed;
 }
 
 .closeBtn {
     font-size: 50px;
 }
 
-/***---   Fin Botones   ---***/
+/***---   Fin Botones   ---***/ /*---------------------------------------------------------------------------------*/
 
-
-/***---   Inicio Encabezado   ---***/
+/***---   Inicio Encabezado   ---***//*---------------------------------------------------------------------------------*/
 
 .contactoRedes {
     max-height: 30px;
 }
 
-/***---   Fin Encabezado   ---***/
+/***---   Fin Encabezado   ---***/ /*---------------------------------------------------------------------------------*/
 
+/***---   FOOTER   ---***//*---------------------------------------------------------------------------------*/
 
-.max20px {
-    max-height: 20px;
+#footer {
+    margin-top: auto;
 }
+
+.footerpadding {
+    padding: 10px;
+
+}
+
+.dlr {
+    max-height: 20px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+
+}
+
+/***---   FOOTER   ---***/ /*---------------------------------------------------------------------------------*/
 
 .z-5px {
     position: relative;
@@ -138,44 +193,9 @@ nav a:visited {
     max-height: 60px;
 }
 
-.overflowH {
-    overflow: hidden;
-}
-
-.cuerpo {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-#footer {
-    margin-top: auto;
-}
-
 .fontTitle {
     font-family: 'Montserrat', sans-serif;
     color: white;
-}
-
-.fontButtons {
-    font-family: 'Russo One', sans-serif;
-    color: white;
-}
-
-.listonAzul {
-    background-color: #00358e;
-    max-height: 70px;
-}
-
-.logoArgProg {
-    margin: 10px;
-    max-height: 50px;
-}
-
-.redesListon {
-    max-height: 35px;
-    margin-top: 17px;
-    margin-right: 20px;
 }
 
 .sombra {
@@ -186,13 +206,6 @@ nav a:visited {
     box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.3);
 }
 
-.aliIzq {
-    text-align: left;
-}
-
-.aliDer {
-    text-align: right;
-}
 
 .radioCirc {
     border: solid 1px white;
@@ -225,15 +238,6 @@ nav a:visited {
     height: 80px;
 }
 
-.dlr {
-    max-height: 20px;
-    margin-left: 10px;
-}
-
-.footerpadding {
-    padding-top: 10px;
-}
-
 .fotoLucio {
     display: flex;
     align-content: center;
@@ -256,6 +260,11 @@ nav a:visited {
     border: solid 5px white;
     top: -155px;
     left: 35px;
+}
+
+.fotoContacto {
+    max-height: 140px;
+    border: solid 5px white;
 }
 
 .altura {
@@ -304,7 +313,7 @@ nav a:visited {
     width: 100%;
 }
 
-/***  LOGIN  ***/
+/***  LOGIN  ***/ /*---------------------------------------------------------------------------------*/
 .cuadroLogin {
     width: 300px;
     height: 250px;
@@ -333,9 +342,9 @@ nav a:visited {
     background-color: rgb(0, 255, 0);
 }
 
+/***  Fin LOGIN  ***/ /*---------------------------------------------------------------------------------*/
 
-
-/*--------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 1200px) and (min-width: 720px) {
     nav a {
@@ -347,6 +356,29 @@ nav a:visited {
 
 @media screen and (max-width: 800px) {
 
+    /***   Liston Azul   ***/ /*---------------------------------------------------------------------------------*/
+        .listonAzul {
+        background-color: #00358e;
+        max-height: 110px;
+    }
+
+    .logoArgProg {
+        max-height: 40px;
+    }
+    
+    .aliIzq, .aliDer{
+        text-align: center;
+    }
+
+    .redesListon {
+        max-height: 30px;
+        margin-top: -15px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    /***   Fin Liston Azul   ***/ /*---------------------------------------------------------------------------------*/
+
+    /***   Manu   ***/ /*---------------------------------------------------------------------------------*/
     nav a {
         padding: 10px 20px 10px 20px;
         text-decoration: none;
@@ -357,25 +389,12 @@ nav a:visited {
         margin-top: 40px;
     }
 
-    .listonAzul {
-        background-color: #00358e;
-        max-height: 110px;
+    .semiFondo {
+        background-color: rgba(0, 0, 0, 0.8);
     }
-
-    .aliIzq, .aliDer{
-        text-align: center;
-    }
-
-
-    .redesListon {
-        max-height: 30px;
-        margin-top: -15px;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    /***   Login   ***/
-
+    /***   Fin Menu   ***/ /*---------------------------------------------------------------------------------*/
+    
+    /***   Login   ***/ /*---------------------------------------------------------------------------------*/
     .loginPc {
         display: none;
     }
@@ -383,13 +402,8 @@ nav a:visited {
     .loginCel {
         display: flex;
     }
+    /***   Fin Login   ***/ /*---------------------------------------------------------------------------------*/
 
-    /***   Fin Login   ***/
-
-
-    .logoArgProg {
-        max-height: 40px;
-    }
 
     .fotoPerfil {
         position: relative;
@@ -404,27 +418,25 @@ nav a:visited {
         height: 50px;
     }
 
-    .semiFondo {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
+
 
     .pc {
         display: none;
-        visibility: hidden;
     }
 
     .cel {
-        min-width: 100%;
-        min-height: 100vh;
-        visibility: visible;
         display: block;
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
         float: left;
         left: 0px;
         top: 0px;
+        z-index: 1;
     }
 }
 
-/***  Efectos de transición  ***/
+/***  Efectos de transición  ***/ /*---------------------------------------------------------------------------------*/
 .animationFX {
     animation: fadeEffect 1s;
     /* Fading effect takes 1 second */

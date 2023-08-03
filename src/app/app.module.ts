@@ -20,6 +20,7 @@ import { UsuarioNuevoComponent } from './Componentes/login/usuario-nuevo/usuario
 import { InicioSessionComponent } from './Componentes/login/inicio-session/inicio-session.component';
 import { FormContactoComponent } from './Componentes/contacto/form-contacto/form-contacto.component';
 import { PropaComponent } from './Componentes/login/propa/propa.component';
+import { CargaDeDatosComponent } from './Componentes/login/carga-de-datos/carga-de-datos.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { PropaComponent } from './Componentes/login/propa/propa.component';
     InicioSessionComponent,
     FormContactoComponent,
     PropaComponent,
+    CargaDeDatosComponent,
   ],
   imports: [
     BrowserModule,

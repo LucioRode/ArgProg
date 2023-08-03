@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioSessionComponent implements OnInit {
 
-  errorInicio : boolean = false;
+  errorInicio : boolean = true;
 
   constructor() { }
 

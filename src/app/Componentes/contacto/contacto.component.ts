@@ -14,6 +14,9 @@ export class ContactoComponent implements OnInit {
     lastName: new FormControl(''),
   })
 
+
+
+  photoprofile : string = "http://delgadoluciorodrigo.acinorsa.com.ar/assets/img/defect/profiledefect.png";
   phoneNumber : number = 5493482622020; 
   email : string = "delgadoluciorodrigo@gmail.com";
   linkedIn : string = "https://www.linkedin.com/in/delgadoluciorodrigo/";
